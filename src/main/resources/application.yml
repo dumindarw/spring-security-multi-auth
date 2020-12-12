@@ -1,0 +1,12 @@
+server:
+  port: 8088
+
+logging:
+  level:
+    root: DEBUG
+
+keycloak-jwkSetUri : http://localhost:8090/auth/realms/calamitaid/protocol/openid-connect/certs
+
+static-jwt:
+  hmacsecret: "PmH10yb2p8YPgKiNy4cnzBwSFpLnf6n1"
+  issuer: "https://static.token.generator.local"

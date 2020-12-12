@@ -1,0 +1,18 @@
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+static-jwt:
+  hmacsecret: "PmH10yb2p8YPgKiNy4cnzBwSFpLnf6n1"
+  issuer: "https://static.token.generator.local"
+  #valid-token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdGF0aWNVc2VyIiwiaXNzIjoiaHR0cHM6Ly9zdGF0aWMudG9rZW4uZ2VuZXJhdG9yLmxvY2FsIiwiZXhwIjoxODk5MTk4Nzc4fQ.dh8nhRNUrzIiflhZcUROai412gUAK1v5JkbOYEzHPhg" #without role field
+  valid-token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdGF0aWNVc2VyIiwiaXNzIjoiaHR0cHM6Ly9zdGF0aWMudG9rZW4uZ2VuZXJhdG9yLmxvY2FsIiwiZXhwIjoxODk5MTk4Nzc4LCJyb2xlIjoiVVNFUiJ9.HMemGsaSEfclQ1b-NuUcWRL_GoX4vaP0PQwHMbZTPGs"
+  expired-token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdGF0aWNVc2VyIiwiaXNzIjoiaHR0cHM6Ly9zdGF0aWMudG9rZW4uZ2VuZXJhdG9yLmxvY2FsIiwiZXhwIjoxNTgzODM4OTI5fQ.2PcSvaqJnaHd0IXwPv0ZDOm05DxDc_oYH3S9YYUFAtI"
+
+basicAuth: "YmFzaWNVc2VyOnBAc3N3MHJk"
+
+keycloak-docker-image:
+  image: "quay.io/keycloak/keycloak"
+  version: "11.0.2"
+
+keycloak-jwkSetUri : http://localhost:8090/auth/realms/calamitaid/protocol/openid-connect/certs
